@@ -28,19 +28,8 @@ Our framework exploits the inherent visual stability of TBM tunnel backgrounds t
 
 ### 3. Findings
 * **Accuracy:** DOWSER achieves a remarkable **86.42% mIoU** in one-shot scenarios.
-* **Comparative Advantage:** It trails the fully supervised baseline (trained on thousands of images) by **less than 5%**, proving that "less is more" when using the right architecture.
-* **Efficiency:** The dual-stream approach effectively filters out noise from complex rock textures and tunnel lighting variations.
-
-### 4. Discussion
-The integration of DINOv3's self-supervised features provides DOWSER with an extraordinary "common sense" of visual structures. 
-* **Strengths:** High generalization capability; minimal labeling overhead.
-* **Challenges:** In environments with extreme mud spray or occlusion, the MLP stream's refinement becomes critical. Future work will focus on temporal consistency across TBM video frames to further stabilize predictions.
-
-### 5. Recommendation
-For industrial implementation, we recommend:
-* **In-situ Deployment:** Integrating the DOWSER engine into the TBM's vision system for real-time leak detection during the excavation cycle.
-* **Active Adaptation:** Using the "One-shot" capability to quickly adapt the model to different tunnel segments by providing one reference image per geological zone.
-* **Multi-modal Expansion:** Incorporating infrared data to assist the visible-light cameras in dark or foggy tunnel conditions.
+* **Comparative Advantage:** It trails the fully supervised baseline (trained on 571 images) by **less than 5%**, proving that "less is more" when using the right architecture.
+* **Efficiency:** The dual-stream approach only required very tiny training.
 
 ---
 
@@ -62,8 +51,9 @@ For industrial implementation, we recommend:
 
 ```bash
 # Clone the repository
-git clone [https://github.com/zxy239/xxxx.git](https://github.com/zxy239/xxxx.git)
+git clone [https://github.com/zxy239/xxxx.git](https://github.com/zxy239/DOWSER.git)
 cd xxxx
 
 # Install dependencies
+
 pip install torch torchvision opencv-python numpy matplotlib
