@@ -6,7 +6,7 @@
 
 Official implementation of **DOWSER**, developed by **Team DeepTunnel Seer**. This is for Underground Infrastructure Digital Challenge (UIDC 2026).
 
-DOWSER (**D**INO-based **O**ne-shot **W**ater **S**eepage **R**ecognition) is a sample-efficient framework designed to achieve high-precision water seepage segmentation in TBM (Tunnel Boring Machine) environments using **only a single annotated sample**.
+DOWSER (**D**INO-based **O**ne-shot **W**ater **S**eepage **R**ecognition) is a sample-efficient framework designed to achieve high-precision water seepage segmentation in TBM (Tunnel Boring Machine) tunnel environments using **only a single annotated sample**.
 
 ---
 
@@ -65,4 +65,5 @@ cd xxxx
 # Install dependencies
 
 pip install torch torchvision opencv-python numpy matplotlib
+
 
