@@ -36,7 +36,7 @@ Our framework exploits the inherent visual stability of TBM tunnel backgrounds t
 
 ### 3. Findings
 * **Accuracy:** DOWSER achieves a remarkable **86.42% mIoU** in one-shot scenarios.
-* **Comparative Advantage:** It trails the fully supervised baseline (trained on 571 images) by **less than 5%**, proving that "less is more" when using the right architecture.
+* **Comparative Advantage:** It achieves **95% of the fully supervised baseline** performance (trained on 571 images), proving that 'less is more' when using the right architecture.
 * **Efficiency:** The dual-stream approach only required very tiny training.
 
 ---
@@ -65,5 +65,6 @@ cd xxxx
 # Install dependencies
 
 pip install torch torchvision opencv-python numpy matplotlib
+
 
 
